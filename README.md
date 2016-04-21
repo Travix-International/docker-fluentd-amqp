@@ -1,6 +1,10 @@
 Docker container for fluentd agent with amqp plugin
 ---------------------------------------------------
 
+[![Stars](https://img.shields.io/docker/stars/travix/fluentd-amqp.svg)](https://hub.docker.com/r/travix/fluentd-amqp/)
+[![Pulls](https://img.shields.io/docker/pulls/travix/fluentd-amqp.svg)](https://hub.docker.com/r/travix/fluentd-amqp/)
+[![License](https://img.shields.io/github/license/Travix-International/docker-fluentd-amqp.svg)](https://github.com/Travix-International/docker-fluentd-amqp/blob/master/LICENSE)
+
 This container, based on the google_containers container, allows you to tail
 [kubernetes] logfiles and publish the events to an AMQP message broker.
 
