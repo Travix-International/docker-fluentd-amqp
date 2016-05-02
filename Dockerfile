@@ -4,8 +4,8 @@ FROM gcr.io/google_containers/fluentd-elasticsearch:1.15
 MAINTAINER "fvlaanderen@travix.com"
 
 # Add amqp plugin
-RUN /opt/td-agent/embedded/bin/gem install fluent-plugin-amqp -v 0.7.1
-RUN /opt/td-agent/embedded/bin/gem install fluent-plugin-record-modifier
+RUN /opt/td-agent/embedded/bin/gem install --no-ri --no-rdoc fluent-plugin-amqp -v 0.7.1
+RUN /opt/td-agent/embedded/bin/gem install --no-ri --no-rdoc fluent-plugin-record-modifier
 
 # Add config file and self-signed certificate
 COPY td-agent.conf /etc/td-agent/td-agent.conf
