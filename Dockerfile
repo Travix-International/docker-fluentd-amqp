@@ -17,6 +17,8 @@ RUN set -ex \
 
 # Copy configuration files
 COPY ./conf/fluent.conf /fluentd/etc/
+COPY entrypoint.sh /bin/
+RUN chmod +x /bin/entrypoint.sh
 
 
 # Add self-signed certificate
