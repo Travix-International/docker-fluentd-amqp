@@ -17,9 +17,9 @@ RUN set -ex \
 
 # Copy configuration files
 COPY ./conf/fluent.conf /fluentd/etc/
-COPY entrypoint.sh /bin/
-RUN chmod +x /bin/entrypoint.sh
 
+# Remove entrypoint - we want to run fluntd as a root user
+ENTRYPOINT []
 
 # Add self-signed certificate
 COPY certificate.pem /etc/ssl/certificate.pem
