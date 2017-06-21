@@ -18,6 +18,11 @@ RUN set -ex \
 # Copy configuration files
 COPY ./conf/fluent.conf /fluentd/etc/
 
+
+# Add self-signed certificate
+COPY certificate.pem /etc/ssl/certificate.pem
+COPY key.pem /etc/ssl/key.pem
+
 # Environment variables
 ENV FLUENTD_OPT=""
 ENV FLUENTD_CONF="fluent.conf"
