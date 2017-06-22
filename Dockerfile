@@ -1,6 +1,3 @@
-
-ENTRYPOINT ["td-agent"]
-
 FROM gcr.io/google_containers/ubuntu-slim:0.6
 
 # Ensure there are enough file descriptors for running Fluentd.
