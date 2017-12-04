@@ -1,5 +1,9 @@
-FROM gcr.io/google-containers/debian-base-amd64:0.1
+FROM debian:stretch-slim
 
+MAINTAINER Travix
+
+COPY clean-apt /usr/bin
+COPY clean-install /usr/bin
 COPY Gemfile /Gemfile
 
 # 1. Install & configure dependencies.

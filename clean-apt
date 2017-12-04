@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# A script encapsulating a common Dockerimage pattern for installing packages
+# and then cleaning up the unnecessary install artifacts.
+# e.g. clean-install iptables ebtables conntrack
+
+set -o errexit
+
+apt-get clean -y
+rm -rf \
+   /var/cache/debconf/* \
+   /var/lib/apt/lists/* \
+   /var/log/* \
+   /tmp/* \
+   /var/tmp/*
