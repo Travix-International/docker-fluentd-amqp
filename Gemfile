@@ -1,0 +1,12 @@
+source 'https://rubygems.org'
+
+gem 'fluentd', '~>0.14.0'
+gem 'activesupport', '~>5.0'
+gem 'fluent-plugin-record-modifier'
+gem 'fluent-plugin-kubernetes_metadata_filter', '~>0.29.0'
+gem 'fluent-plugin-prometheus'
+gem 'fluent-plugin-flowcounter-simple'
+gem 'fluent-plugin-amqp'
+gem 'fluent-plugin-record-reformer'
+gem 'fluent-plugin-rename-key'
+gem 'oj', '~>3.3.5'
