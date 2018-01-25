@@ -29,7 +29,7 @@ apt-get install -y -q --no-install-recommends \
 sed -i -e "s/USER=td-agent/USER=root/" -e "s/GROUP=td-agent/GROUP=root/" /etc/init.d/td-agent
 
 # http://docs.fluentd.org/articles/plugin-management
-td-agent-gem install --no-document fluent-plugin-amqp -v 0.11.0
+td-agent-gem install --no-document fluent-plugin-amqp -v 0.9.3
 td-agent-gem install --no-document fluent-plugin-record-modifier -v 0.6.0
 td-agent-gem install --no-document fluent-plugin-kubernetes_metadata_filter -v 0.27.0
 
